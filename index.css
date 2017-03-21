@@ -1,0 +1,146 @@
+body{
+	max-width: 1200px;
+	margin: 0 auto;
+	background-color: #F4f4f4;
+	font-family: helvetica;
+}
+header{
+	text-align: center;
+	background-size: cover;
+	background-color: #373737;;
+}
+a{
+	color: #DCD0c0
+}
+h1{
+	font-size: 50px;
+	color: #C0b283;
+	letter-spacing: 1px;
+	margin-bottom: 0;
+}
+#tagline{
+	letter-spacing: .5px;
+}
+.header li{
+	display: inline;
+	padding: 0 10px 0 10px;
+	margin-top: 0;
+}
+.header{
+	padding: 10px;
+	background: rgba(0,0,0,.5);
+}
+h2{
+	text-align: center;
+	margin: 0;
+	height: 40px;
+	background-color: #C0b283;
+}
+#tiles{
+	height: 660px;
+	margin: 0 auto;
+}
+.menu ul{
+	max-width: 100%;
+	margin: 0 auto;
+}
+.menu{
+	width: 1200px;
+	padding: 15px;
+	list-style: none;
+}
+.menu li{
+	cursor: pointer;
+	height: 200px;
+	width: 380px;
+	margin: 10px 0 10px 0;
+	position: relative;
+	float: left;
+	border-radius: 12px;
+	position: relative;
+	display: block;
+}
+.fade:hover{
+	background-color: rgba(0,0,0,0);
+	color: rgba(192,178,131,.4);
+}
+.fade{
+	color: #C0b283;
+	background: rgba(0,0,0,.6);
+	text-align: center;
+	font-size: 40px;
+	letter-spacing: 1px;
+	border-radius: 12px;
+	padding: 10px;
+	position: absolute;
+	bottom: 0;
+	margin: 0;
+	width: 360px;
+	height: 180px;
+	line-height: 180px;
+	transition: background-color 0.7s ease;
+	/*
+	fix it so size flexible to browser size
+	*/
+}
+#about{
+	background-color: #C0b283;
+	margin-top: 15px;
+}
+/*input size for suggest box
+*/
+#drama{
+	background-image: url("http://i.imgur.com/5HXb6W6.jpg");
+	margin-right: 20px;
+	margin-top: 0;
+}
+#romance{
+	background-image: url("http://i.imgur.com/Mt2IseT.jpg");
+	margin-top: 0;
+}
+#action{
+	background-image: url("http://i.imgur.com/VMgjaTA.jpg");
+	margin-left: 20px;
+	margin-top: 0;
+}
+#horror{
+	background-image: url("http://i.imgur.com/T1pZRkK.jpg");
+	margin-right: 20px;
+}
+#comedy{
+	background-image: url("http://i.imgur.com/uGEeafY.jpg")
+}
+#age{
+	background-image: url("http://i.imgur.com/orXZd8T.jpg");
+	margin-left: 20px;
+}
+#documentary{
+	background-image: url("http://i.imgur.com/UlkoHoj.jpg");
+	margin-right: 20px;
+}
+#holidays{
+	background-image: url("http://i.imgur.com/pKj5kcz.jpg");
+}
+#family{
+	background-image: url("http://i.imgur.com/TQXQcCz.jpg");
+	margin-left: 20px;
+}
+/*table{
+	text-align: bottom;
+	border-spacing: 5px;
+}
+td{
+	text-align: left;
+	width: 400px; 
+	height: 134px;
+  	vertical-align: bottom;
+	border-radius: 12px;
+	cursor: pointer;
+}
+.menu th{
+	display: none;
+}
+.blank{
+	width: 0px;
+	height: 2px;
+}*/
