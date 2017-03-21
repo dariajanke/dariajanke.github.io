@@ -1,11 +1,12 @@
 <!DOCtype html>
 <head>
 	<title>FFF: Foreign Film Fountain</title>
-	<link rel="stylesheet" type="text/css" href="dariajanke.github.io/index.css">
-	<link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Raleway:400,800" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="landing.css">
+	<link href="https://fonts.googleapis.com/css?family=Sigmar+One|Raleway:400,800" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<style>
 		h1{
-			font-family: "Abril Fatface", cursive
+			font-family: "Sigmar One", cursive
 		}
 		body{
 			font-family: "Raleway", sans-serif;
@@ -13,6 +14,39 @@
 		.fade{
 			font-weight: 800;
 		}
+		.header{
+			font-family: "Raleway", sans-serif;
+		}	
+		.row::after {
+   	 		content: "";
+    		clear: both;
+    		display: table;
+		}
+		[class*="col-"] {
+    		float: left;
+    		padding: 15px;
+    		border: 1px solid black;
+    	}
+    	@media only screen and (min-width: 768px){
+			.col-1 {width: 8.33%;}
+			.col-2 {width: 16.66%;}
+			.col-3 {width: 25%;}
+			.col-4 {width: 33.33%;}
+			.col-5 {width: 41.66%;}
+			.col-6 {width: 50%;}
+			.col-7 {width: 58.33%;}
+			.col-8 {width: 66.66%;}
+			.col-9 {width: 75%;}
+			.col-10 {width: 83.33%;}
+			.col-11 {width: 91.66%;}
+			.col-12 {width: 100%;}	
+		}
+		@media only screen and (max-width: 768px){
+    		[class*="col-"]{
+        		width: 100%;
+    		}
+		}
+
 	</style>
 </head>
 <body>
@@ -22,10 +56,10 @@
 		<h3 id="tagline">Broaden your cinematic horizon
 		</h3>
 		<ul class="header">
-			<li><a href="#">About this project/a></li>
-			<li><a href="#">All films</a></li>
-			<li><a href="#">Suggest a film</a></li>
-			<li><a href="#">Subscribe</a></li>
+			<li><a href="#aboutlink">About this project</a></li>
+			<li><a href="#alllink">All films</a></li>
+			<li><a href="#suggestlink">Suggest a film</a></li>
+			<li><a href="#subscribelink">Subscribe</a></li>
 		</ul>
 	</header>
 	<h2>Select your favourite genre and get recommendations
@@ -79,92 +113,215 @@
 			</li>
 		</ul>
 	</div>
-	<div class="about">
-		<h2 id="about">About this project
+	<a name="aboutlink"><div class="about"></a>		<h2 id="about">About this project
 		</h2>
 		<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
 		</p>
 	</div>
-	<div class="all">
+	<a name="alllink"><div class="all"></a>	
 		<h2 id="all">All films
 		</h2>
-		<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-		</p>
+		<div class="row">
+			<div class="col-11" id="genreheader">
+			Drama
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-3" id="image">Image
+			</div>
+			<div class="col-6" id="synopsis">Synopsis
+  			</div>
+  			<div class="col-2" id="References">References
+  			</div>
+		</div>
+		<div class="row">
+			<div class="col-3" id="image">Image
+			</div>
+			<div class="col-6" id="synopsis">Synopsis
+  			</div>
+  			<div class="col-2" id="References">References
+  			</div>
+		</div>
+		<div class="row">
+			<div class="col-11" id="genreheader">
+			Romance
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-3" id="image">Image
+			</div>
+			<div class="col-6" id="synopsis">Synopsis
+  			</div>
+  			<div class="col-2" id="References">References
+  			</div>
+		</div>
+		<div class="row">
+			<div class="col-3" id="image">Image
+			</div>
+			<div class="col-6" id="synopsis">Synopsis
+  			</div>
+  			<div class="col-2" id="References">References
+  			</div>
+		</div>
+		<div class="row">
+			<div class="col-11" id="genreheader">
+			Action
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-3" id="image">Image
+			</div>
+			<div class="col-6" id="synopsis">Synopsis
+  			</div>
+  			<div class="col-2" id="References">References
+  			</div>
+		</div>
+		<div class="row">
+			<div class="col-3" id="image">Image
+			</div>
+			<div class="col-6" id="synopsis">Synopsis
+  			</div>
+  			<div class="col-2" id="References">References
+  			</div>
+		</div>
+		<div class="row">
+			<div class="col-11" id="genreheader">
+			Horror
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-3" id="image">Image
+			</div>
+			<div class="col-6" id="synopsis">Synopsis
+  			</div>
+  			<div class="col-2" id="References">References
+  			</div>
+		</div>
+		<div class="row">
+			<div class="col-3" id="image">Image
+			</div>
+			<div class="col-6" id="synopsis">Synopsis
+  			</div>
+  			<div class="col-2" id="References">References
+  			</div>
+		</div>
+		<div class="row">
+			<div class="col-11" id="genreheader">
+			Comedy
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-3" id="image">Image
+			</div>
+			<div class="col-6" id="synopsis">Synopsis
+  			</div>
+  			<div class="col-2" id="References">References
+  			</div>
+		</div>
+		<div class="row">
+			<div class="col-3" id="image">Image
+			</div>
+			<div class="col-6" id="synopsis">Synopsis
+  			</div>
+  			<div class="col-2" id="References">References
+  			</div>
+		</div>
+		<div class="row">
+			<div class="col-11" id="genreheader">
+			Coming of Age
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-3" id="image">Image
+			</div>
+			<div class="col-6" id="synopsis">Synopsis
+  			</div>
+  			<div class="col-2" id="References">References
+  			</div>
+		</div>
+		<div class="row">
+			<div class="col-3" id="image">Image
+			</div>
+			<div class="col-6" id="synopsis">Synopsis
+  			</div>
+  			<div class="col-2" id="References">References
+  			</div>
+		</div>
+		<div class="row">
+			<div class="col-11" id="genreheader">
+			Documentary
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-3" id="image">Image
+			</div>
+			<div class="col-6" id="synopsis">Synopsis
+  			</div>
+  			<div class="col-2" id="References">References
+  			</div>
+		</div>
+		<div class="row">
+			<div class="col-3" id="image">Image
+			</div>
+			<div class="col-6" id="synopsis">Synopsis
+  			</div>
+  			<div class="col-2" id="References">References
+  			</div>
+		</div>
+		<div class="row">
+			<div class="col-11" id="genreheader">
+			Holidays
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-3" id="image">Image
+			</div>
+			<div class="col-6" id="synopsis">Synopsis
+  			</div>
+  			<div class="col-2" id="References">References
+  			</div>
+		</div>
+		<div class="row">
+			<div class="col-3" id="image">Image
+			</div>
+			<div class="col-6" id="synopsis">Synopsis
+  			</div>
+  			<div class="col-2" id="References">References
+  			</div>
+		</div>
+		<div class="row">
+			<div class="col-11" id="genreheader">
+			Family
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-3" id="image">Image
+			</div>
+			<div class="col-6" id="synopsis">Synopsis
+  			</div>
+  			<div class="col-2" id="References">References
+  			</div>
+		</div>
+		<div class="row">
+			<div class="col-3" id="image">Image
+			</div>
+			<div class="col-6" id="synopsis">Synopsis
+  			</div>
+  			<div class="col-2" id="References">References
+  			</div>
+		</div>
 	</div>
-	<div class="suggest">
+	<a name="suggestlink"><div class="suggest"></a>	
 		<h2 id="suggest">Suggest a film
 		</h2>
 		<p>Have you watched an excellent foreign film that isn't part of the Foreign FIlm Fountain yet? Submit your suggestion!
 		</p>
 		<input type="text" placeholder="Please provide the title, year and production country of the film.">
 	</div>
-	<div class="subscribe">
+	<a name="subscribelink"><div class="subscribe"></a>		
 		<h2 id="subscribe">Subscribe
 		</h2>
+		<p>Subscribe to receive updates about new foreign films in your favourite genre, festivals and screeings of foreign films in your region. 
+		</p>
 	</div>
-	<!--<table style="width:100%", class="menu">
-		<tr>
-			<td id="drama">
-				<div class="content">
-					<span class="genre">DRAMA</span><br />
-					All the highest highs and lowest lows of life.
-				</div>
-			</td>
-			<td class="blank"></td>
-			<td id="romance">
-				<div class="content">
-					<span class="genre">ROMANCE</span><br />
-					You'll sigh, you'll cry, you'll fall in love.
-				</div>
-			</td>
-		</tr>
-		<tr class="blank"></tr>
-		<tr>
-			<td id="action">
-				<div class="content">
-					<span class="genre">ACTION</span><br />
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-				</div>
-			</td>
-			<td class="blank"></td>
-			<td id="horror">
-				<div class="content">
-					<span class="genre">HORROR</span><br />
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-				</div>
-			</td>
-		</tr>
-		<tr class="blank"></tr>
-		<tr>
-			<td id="comedy">
-				<div class="content">
-					<span class="genre">COMEDY</span><br />
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-				</div>
-			</td>
-			<td class="blank"></td>
-			<td id="age">
-				<div class="content">
-					<span class="genre">COMING OF AGE</span><br />
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-				</div>
-			</td>
-		</tr>
-		<tr class="blank"></tr>
-		<tr>
-			<td id="documentary">
-				<div class="content">
-					<span class="genre">DOCUMENTARY</span><br />
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-				</div>	
-			</td>
-			<td class="blank"></td>
-			<td id="holidays">
-				<div class="content">
-					<span class="genre">HOLIDAYS</span><br />
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-				</div>
-			</td>
-		</tr>
-	</table>-->
 </body>

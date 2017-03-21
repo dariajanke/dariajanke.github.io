@@ -2,19 +2,18 @@ body{
 	max-width: 1200px;
 	margin: 0 auto;
 	background-color: #F4f4f4;
-	font-family: helvetica;
+}
+a{
+	color:red;
 }
 header{
 	text-align: center;
 	background-size: cover;
 	background-color: #373737;;
 }
-a{
-	color: #DCD0c0
-}
 h1{
 	font-size: 50px;
-	color: #C0b283;
+	/*color: #C0b283;*/
 	letter-spacing: 1px;
 	margin-bottom: 0;
 }
@@ -29,6 +28,7 @@ h1{
 .header{
 	padding: 10px;
 	background: rgba(0,0,0,.5);
+	/*color: #DCD0c0*/
 }
 h2{
 	text-align: center;
@@ -79,9 +79,6 @@ h2{
 	height: 180px;
 	line-height: 180px;
 	transition: background-color 0.7s ease;
-	/*
-	fix it so size flexible to browser size
-	*/
 }
 #about{
 	background-color: #C0b283;
@@ -125,22 +122,3 @@ h2{
 	background-image: url("http://i.imgur.com/TQXQcCz.jpg");
 	margin-left: 20px;
 }
-/*table{
-	text-align: bottom;
-	border-spacing: 5px;
-}
-td{
-	text-align: left;
-	width: 400px; 
-	height: 134px;
-  	vertical-align: bottom;
-	border-radius: 12px;
-	cursor: pointer;
-}
-.menu th{
-	display: none;
-}
-.blank{
-	width: 0px;
-	height: 2px;
-}*/
