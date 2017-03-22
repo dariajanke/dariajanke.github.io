@@ -10,7 +10,7 @@ header{
 }
 h1{
 	font-size: 50px;
-	color: #ffd500;
+	color: #C0b283;
 	letter-spacing: 1px;
 	margin-bottom: 0;
 }
@@ -28,13 +28,16 @@ a{
 .header{
 	padding: 10px;
 	background: rgba(0,0,0,.5);
-	/*color: #DCD0c0*/
+}
+.headerlinks{
+	color: #C0b283;
 }
 h2{
 	text-align: center;
 	margin: 0;
 	height: 40px;
 	background-color: #C0b283;
+	color: #2A3132;
 }
 #tiles{
 	height: 660px;
@@ -78,7 +81,7 @@ h2{
 	height: 180px;
 	line-height: 180px;
 	transition: background-color 0.7s ease;
-	color: #ffd500;
+	color: #C0b283;
 }
 .row::after {
    	content: "";
@@ -116,30 +119,57 @@ h2{
     }
 }
 .sources{
-			align-content: center
-			padding-left: 0;
-		}
-		#back{
-			text-align: right;
-			padding: 0;
-			font-size: 12px;
-		}
-		.recommendations{
-			font-size: 14px;
-		}
-		#image{
-			padding-top: 0;
-		}
-		#selection:hover{
-			background-color: #C0b283;
-			transition: background-color 0.3s ease;
-		}
+	align-content: center
+	padding-left: 0;
+}
+#back{
+	text-align: right;
+	padding-right: 5px;
+	font-size: 12px;
+}
+.recommendations{
+	font-size: 14px;
+}
+#image{
+	padding-top: 0;
+}
+#selection:hover{
+	background-color: #C0b283;
+	transition: background-color 0.3s ease;
+}
 #about{
 	background-color: #C0b283;
 	margin-top: 15px;
 }
-/*input size for suggest box
-*/
+input[type="suggestion"]{
+	width: 400px;
+	height: 30px;
+	text-align: top;
+	margin: auto;
+}
+input[type="text"]{
+	width: 400px;
+	height: 30px;
+	text-align: top;
+}
+input[type="comment"]{
+	width: 400px;
+	height: 60px;
+}
+input[placeholder]{
+	text-align: top;
+}
+#contact{
+	position: relative;
+	float: left;
+}
+#comments{
+	height: 60px;
+}
+#genrebutton{
+	position: relative;
+	float: right;
+}
 #drama{
 	background-image: url("http://i.imgur.com/5HXb6W6.jpg");
 	margin-right: 20px;

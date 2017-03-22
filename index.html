@@ -11,6 +11,12 @@
 		body{
 			font-family: "Raleway", sans-serif;
 		}
+		button{
+			font-family: "Raleway", sans-serif;
+		}
+		input{
+			font-family: "Raleway", sans-serif;
+		}
 		.fade{
 			font-weight: 800;
 		}
@@ -32,15 +38,15 @@
 		</h1>
 		<h3 id="tagline">Broaden your cinematic horizon
 		</h3>
-		<ul class="header">
-			<li><a href="#aboutlink">About this project</a></li>
-			<li><a href="#alllink">All films</a></li>
-			<li><a href="#suggestlink">Suggest a film</a></li>
-			<li><a href="#subscribelink">Subscribe</a></li>
-		</ul>
+		<a name="top"><ul class="header">
+			<li><a href="#alllink" class="headerlinks">All films</a></li>
+			<li><a href="#suggestlink" class="headerlinks">Suggest a film</a></li>
+			<li><a href="#subscribelink" class="headerlinks">Subscribe</a></li>
+			<li><a href="#aboutlink" class="headerlinks">About this project</a></li>
+		</ul></a>
 	</header>
-	<a name="top"><h2>Select your favourite genre and get recommendations
-	</h2></a>
+	<h2>Select your favourite genre and get recommendations
+	</h2>
 	<div id="tiles">
 		<ul class="menu">
 			<a href="#dramalist"><li id="drama">
@@ -89,15 +95,6 @@
 				</p>
 			</li></a>
 		</ul>
-	</div>
-	<a name="aboutlink"><div class="about"></a>		<h2 id="about">About this project
-		</h2>
-		<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-		</p>
-		<div class="row">
-		<a href="#top"><p id="back"> &#8593; Back to the Top 
-		</p></a>
-		</div>
 	</div>
 	<a name="alllink"><div class="all"></a>	
 		<h2 id="all">All films
@@ -577,22 +574,90 @@
 	<a name="suggestlink"><div class="suggest"></a>	
 		<h2 id="suggest">Suggest a film
 		</h2>
-		<p>Have you watched an excellent foreign film that isn't part of the Foreign FIlm Fountain yet? Submit your suggestion!
-		</p>
-		<input type="text" placeholder="Please provide the title, year and production country of the film.">
 		<div class="row">
-		<a href="#top"><p id="back"> &#8593; Back to the Top 
-		</p></a>
+			<div class="col-12">
+				<p>Have you watched an excellent foreign film that isn't part of the Foreign FIlm Fountain yet? Submit your suggestion and we will add it to our recommendations!
+				</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-1">
+			</div>
+			<div class="col-4" id="suggestion">
+				<input type="suggestion" placeholder="Please provide the title, year and production country.">
+			</div>
+			<div class="col-1">
+				<button>Submit</button>
+			</div>
+		</div>
+		<div class="row">
+			<a href="#top"><p id="back"> &#8593; Back to the Top</p>
+			</a>
 		</div>
 	</div>
-	<a name="subscribelink"><div class="subscribe"></a>		
-		<h2 id="subscribe">Subscribe
+	<a name="subscribelink"><div class="subscribe"></a>		<h2 id="subscribe">Subscribe
 		</h2>
-		<p>Subscribe to receive updates about new foreign films in your favourite genre, festivals and screeings of foreign films in your region. 
+		<div class="row">
+			<div class="col-12">
+				<p>Do you enjoy Foreign Film Fountain? Subscribe to receive regular updates about new foreign films in your favourite genre, and information about screeings of foreign films in your region. 
+				</p>
+			</div>
+			<div class="col-1">
+			</div>
+			<div class="col-4" id="contact">
+				<input type="text" placeholder="Your Name">
+				<br />
+				<br />
+				<input type="text" placeholder="Your Email">
+				<br />
+				<br />
+				<input type="text" placeholder="Your country of residence">
+				<br />
+				<br />
+				<input type="comment" placeholder="Comments">
+			</div>
+			<div class="col-4" id="contactselect">
+				Please select the genres you are most interested in to receive personalised updates.
+				<br />
+				<br />
+				<input type="checkbox"> Drama
+				<br />
+				<input type="checkbox"> Romance
+				<br />
+				<input type="checkbox"> Action
+				<br />
+				<input type="checkbox"> Horror
+				<br />
+				<input type="checkbox"> Comedy
+				<br />
+				<input type="checkbox"> Coming of Age
+				<br />
+				<input type="checkbox"> Documentary
+				<br />
+				<input type="checkbox"> Holidays
+				<br />
+				<input type="checkbox"> Family <button id=genrebutton>Submit</button>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-12">
+			<a href="#top"><p id="back"> &#8593; Back to the Top 
+			</p></a>
+			</div>
+		</div>
+	</div>
+	<a name="aboutlink"><div class="about"></a>		<h2 id="about">About this project
+		</h2>
+		<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
 		</p>
 		<div class="row">
 		<a href="#top"><p id="back"> &#8593; Back to the Top 
 		</p></a>
 		</div>
 	</div>
+	<script>
+		$("button").on("click", function(){
+			alert("A button was clicked!")
+		});
+	</script>
 </body>
