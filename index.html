@@ -2,12 +2,18 @@
 <head>
 	<title>FFF: Foreign Film Fountain</title>
 	<link rel="stylesheet" type="text/css" href="index.css">
-	<link href="https://fonts.googleapis.com/css?family=Sigmar+One|Raleway:400,800,900|Bungee+Shade" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Fascinate+Inline|Raleway:400,800,900|Bungee+Shade" rel="stylesheet">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<style>
-		h1{
-			font-family: "Bungee Shade", cursive;
+		#h1{
+			font-family: "Fascinate Inline", cursive;
+		}
+		h2{
+			font-family: "Fascinate Inline", cursive;
+		}
+		#select{
+			font-family: "Raleway", sans-serif;
 		}
 		body{
 			font-family: "Raleway", sans-serif;
@@ -18,10 +24,13 @@
 		input{
 			font-family: "Raleway", sans-serif;
 		}
-		.fade{
+		.header{
+			font-weight: bold;
+		}
+		.fader{
 			font-weight: 800;
 		}
-		.header{
+		.header .text{
 			font-family: "Raleway", sans-serif;
 		}	
 		#genreheader{
@@ -36,66 +45,98 @@
 </head>
 <body>
 	<header>
-		<a name="top"><ul class="header">
-			<li><a href="#alllink" class="headerlinks">All films</a></li>
-			<li><a href="#suggestlink" class="headerlinks">Suggest a film</a></li>
-			<li><a href="#subscribelink" class="headerlinks">Subscribe</a></li>
-			<li><a href="#aboutlink" class="headerlinks">About this project</a></li>
-		</ul></a>
-		<h1>Foreign Film Fountain
-		</h1>
-		<h3 id="tagline">Broaden your cinematic horizon
-		</h3>
+		<a name="top"><div class="row" id="navigation"></a>
+			<div class="col-6" style="text-align: left">
+				<span id="h1">FOREIGN FILM FOUNTAIN
+				</span>
+			</div>
+			<div class="col-5">
+				<ul class="header">
+					<li><a href="#alllink" class="headerlinks" style="padding: 0 0 0 10px">All films</a></li>
+					<li><a href="#suggestlink" class="headerlinks" style="padding: 0 10px 0 10px">Suggest a film</a></li>
+					<li><a href="#subscribelink" class="headerlinks" style="padding: 0 10px 0 10px">Subscribe</a></li>
+					<li><a href="#aboutlink" class="headerlinks" style="padding: 0 10px 0 0">About this project</a></li>
+				</ul>
+			</div>
 	</header>
-	<div  style="padding-top:0">
-		<img src="http://i.imgur.com/UTCwigz.jpg">
+	<div class="slideshow-container">
+		<div class="mySlides fade">
+ 			<img src="http://i.imgur.com/yzrq8b3.jpg" style="width:100%">
+  			<div class="text">Welcome to Foreign Film Fountain!</div>
+		</div>
+		<div class="mySlides fade">
+ 			<img src="http://i.imgur.com/izMe1gn.jpg" style="width:100%">
+  			<div class="text">Broaden your cinematic horizon</div>
+		</div>
+		<div class="mySlides fade">
+  			<img src="http://i.imgur.com/n1En0s6.jpg" style="width:100%">
+  			<div class="text">Get personalised recommendations based on your taste</div>
+		</div>
+		<div class="mySlides fade">
+  			<img src="http://i.imgur.com/rCVsJn2.jpg" style="width:100%">
+  			<div class="text">Find out where to watch foreign films with subtitles in high quality</div>
+		</div>
+		<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+		<a class="next" onclick="plusSlides(1)">&#10095;</a>
+	</div>
+	<br>
+	<div style="text-align:center">
+  		<span class="dot" onclick="currentSlide(1)"></span> 
+  		<span class="dot" onclick="currentSlide(2)"></span> 
+  		<span class="dot" onclick="currentSlide(3)"></span> 
+  		<span class="dot" onclick="currentSlide(4)"></span> 
+	</div>
+	<div>
+		<p>
+			<img src="http://i.imgur.com/UTCwigz.jpg">
+		</p>
 	</div>
 	<h2 id="select">Select your favourite genre and get recommendations for great foreign films!
 	</h2>
 	<div id="tiles">
 		<ul class="menu">
 			<a href="#dramalist"><li id="drama">
-				<p class="fade">
+				<p class="fader">
 						<span class="genre">DRAMA</span>
 				</p>
 			</li></a>
 			<a href="#romancelist"><li id="romance">
-				<p class="fade">
+				<p class="fader">
 					<span class="genre">ROMANCE</span>
 				</p>
 			</li></a>
 			<a href="#actionlist"><li id="action">
-				<p class="fade">
+				<p class="fader">
 					<span class="genre">ACTION</span>
 				</p>
 			</li></a>
 			<a href="#horrorlist"><li id="horror">
-				<p class="fade">
+				<p class="fader">
 					<span class="genre">HORROR</span>
 				</p>
 			</li></a>
 			<a href="#comedylist"><li id="comedy">
-				<p class="fade">
+				<p class="fader">
 					<span class="genre">COMEDY</span>
 				</p>
 			</li></a>
 			<a href="#agelist"><li id="age">
-				<p class="fade">
+				<p class="fader">
 					<span class="genre">COMING OF AGE</span>
 				</p>
 			</li></a>
 			<a href="#documentarylist"><li id="documentary">
-				<p class="fade">
+				<p class="fader">
 					<span class="genre">DOCUMENTARY</span>
 				</p>
 			</li></a>
 			<a href="#holidayslist"><li id="holidays">
-				<p class="fade">
+				<p class="fader">
 					<span class="genre">HOLIDAYS</span>
 				</p>
 			</li></a>
 			<a href="#familylist"><li id="family">
-				<p class="fade">
+				<p class="fader">
 					<span class="genre">FAMILY</span>
 				</p>
 			</li></a>
@@ -105,11 +146,9 @@
 		<img src="http://i.imgur.com/UTCwigz.jpg">
 	</div>
 	<a name="alllink"><div class="all"></a>	
-		<h2 id="all">All films
-		</h2>
 		<div class="row">
 			<a name="dramalist"><div class="col-12" id="genreheader">
-			Drama
+			<br /> DRAMA
 			</div></a>
 		</div>
 		<div class="row" id="selection">
@@ -166,7 +205,7 @@
 		</div>
 		<div class="row">
 			<a name="romancelist"><div class="col-12" id="genreheader">
-			Romance
+			ROMANCE
 			</div></a>
 		</div>
 		<div class="row"  id="selection">
@@ -218,7 +257,7 @@
 		</div>
 		<div class="row">
 			<a name="actionlist"><div class="col-12" id="genreheader">
-			Action
+			ACTION
 			</div></a>
 		</div>
 		<div class="row"  id="selection">
@@ -274,7 +313,7 @@
 		</div>
 		<div class="row">
 			<a name="horrorlist"><div class="col-12" id="genreheader">
-			Horror
+			HORROR
 			</div></a>
 		</div>
 		<div class="row"  id="selection">
@@ -329,7 +368,7 @@
 		</div>
 		<div class="row">
 			<a name="comedylist"><div class="col-12" id="genreheader">
-			Comedy
+			COMEDY
 			</div></a>
 		</div>
 		<div class="row" id="selection">
@@ -376,7 +415,7 @@
 		</div>
 		<div class="row">
 			<a name="agelist"><div class="col-12" id="genreheader">
-			Coming of Age
+			COMING OF AGE
 			</div></a>
 		</div>
 		<div class="row" id="selection">
@@ -430,7 +469,7 @@
 		</div>
 		<div class="row">
 			<a name="documentarylist"><div class="col-12" id="genreheader">
-			Documentary
+			DOCUMENTARY
 			</div></a>
 		</div>
 		<div class="row" id="selection">
@@ -484,7 +523,7 @@
 		</div>
 		<div class="row">
 			<a name="holidayslist"><div class="col-12" id="genreheader">
-			Holidays
+			HOLIDAYS
 			</div></a>
 		</div>
 		<div class="row" id="selection">
@@ -537,7 +576,7 @@
 		</div>
 		<div class="row">
 			<a name="familylist"><div class="col-12" id="genreheader">
-			Family
+			FAMILY
 			</div></a>
 		</div>
 		<div class="row" id="selection">
@@ -694,5 +733,28 @@
 		$("button").on("click", function(){
 			alert("A button was clicked!")
 		});
+		var slideIndex = 1;
+		showSlides(slideIndex);
+		function plusSlides(n) {
+  			showSlides(slideIndex += n);
+		}
+		function currentSlide(n) {
+  			showSlides(slideIndex = n);
+		}
+		function showSlides(n) {
+ 			var i;
+  			var slides = document.getElementsByClassName("mySlides");
+  			var dots = document.getElementsByClassName("dot");
+  			if (n > slides.length) {slideIndex = 1}    
+  			if (n < 1) {slideIndex = slides.length}
+  			for (i = 0; i < slides.length; i++) {
+      			slides[i].style.display = "none";  
+  			}
+  			for (i = 0; i < dots.length; i++) {
+      			dots[i].className = dots[i].className.replace(" active", "");
+  			}
+  			slides[slideIndex-1].style.display = "block";  
+  			dots[slideIndex-1].className += " active";
+		}
 	</script>
 </body>
