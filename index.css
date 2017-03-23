@@ -1,18 +1,23 @@
 body{
 	max-width: 1200px;
 	margin: 0 auto;
-	background-color: #F4f4f4;
+	background-color: white;
 }
 header{
 	text-align: center;
 	background-size: cover;
-	background-color: #373737;
+	background-color: red;
 }
 h1{
 	font-size: 50px;
-	color: #C0b283;
 	letter-spacing: 1px;
 	margin-bottom: 0;
+	padding:0;
+	color: #FF7400;
+}
+h3{
+	margin-bottom: 20px;
+	margin-top: 0;
 }
 a{
 	color: black;
@@ -24,20 +29,25 @@ a{
 	display: inline;
 	padding: 0 10px 0 10px;
 	margin-top: 0;
+	margin-bottom: 0;
+	padding-bottom: 0;
 }
 .header{
 	padding: 10px;
-	background: rgba(0,0,0,.5);
+	border-top: 2px black solid;
+	border-bottom: 2px black solid;
 }
 .headerlinks{
-	color: #C0b283;
 }
 h2{
 	text-align: center;
-	margin: 0;
+	margin-top: 10px;
+	margin-bottom: 0;
 	height: 40px;
-	background-color: #C0b283;
-	color: #2A3132;
+}
+#select{
+	margin-bottom: 0;
+	padding-bottom: 0;
 }
 #tiles{
 	height: 660px;
@@ -81,7 +91,7 @@ h2{
 	height: 180px;
 	line-height: 180px;
 	transition: background-color 0.7s ease;
-	color: #C0b283;
+	color: #FF8B2A;
 }
 .row::after {
    	content: "";
@@ -98,6 +108,7 @@ h2{
     padding-bottom: 0;
     padding-right: 0;
     padding-top: 0;
+    text-align: center;
 }
 @media only screen and (min-width: 1000px){
 			.col-1 {width: 8.33%;}
@@ -134,12 +145,8 @@ h2{
 	padding-top: 0;
 }
 #selection:hover{
-	background-color: #C0b283;
+	background-color: rgba(0,0,0,0.3);
 	transition: background-color 0.3s ease;
-}
-#about{
-	background-color: #C0b283;
-	margin-top: 15px;
 }
 input[type="suggestion"]{
 	width: 400px;
@@ -169,6 +176,36 @@ input[placeholder]{
 #genrebutton{
 	position: relative;
 	float: right;
+	cursor: pointer;
+}
+#suggestionbox{
+	padding-top: 0;
+	margin-top: 0;
+}
+#suggest{
+	padding-bottom: 0;
+	margin-bottom: 0;
+}
+#profile{
+	width: 180px;
+	height: 180px;
+	border-radius: 50%;
+}
+#abouttext{
+	text-align: justify;
+	line-height: 20px;
+	padding-bottom: 0;
+}
+#bottomline{
+	font-size: 12px;
+	text-align: center;
+}
+.material-icons{
+	vertical-align: bottom;
+}
+#mail{
+	text-decoration: underline;
+	cursor: pointer;
 }
 #drama{
 	background-image: url("http://i.imgur.com/5HXb6W6.jpg");
@@ -198,6 +235,7 @@ input[placeholder]{
 #documentary{
 	background-image: url("http://i.imgur.com/UlkoHoj.jpg");
 	margin-right: 20px;
+	margin-bottom: 20px;
 }
 #holidays{
 	background-image: url("http://i.imgur.com/pKj5kcz.jpg");

@@ -2,11 +2,12 @@
 <head>
 	<title>FFF: Foreign Film Fountain</title>
 	<link rel="stylesheet" type="text/css" href="index.css">
-	<link href="https://fonts.googleapis.com/css?family=Sigmar+One|Raleway:400,800" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Sigmar+One|Raleway:400,800,900|Bungee+Shade" rel="stylesheet">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<style>
 		h1{
-			font-family: "Sigmar One", cursive;
+			font-family: "Bungee Shade", cursive;
 		}
 		body{
 			font-family: "Raleway", sans-serif;
@@ -24,7 +25,8 @@
 			font-family: "Raleway", sans-serif;
 		}	
 		#genreheader{
-    		font-family: "Sigmar One", cursive;
+    		font-family: "Raleway", cursive;
+    		font-weight: 800;
     	}
     	.movie{
 			font-weight: bold;
@@ -34,18 +36,21 @@
 </head>
 <body>
 	<header>
-		<h1>Foreign Film Fountain
-		</h1>
-		<h3 id="tagline">Broaden your cinematic horizon
-		</h3>
 		<a name="top"><ul class="header">
-			<li><a href="allfilms.html" class="headerlinks">All films</a></li>
+			<li><a href="#alllink" class="headerlinks">All films</a></li>
 			<li><a href="#suggestlink" class="headerlinks">Suggest a film</a></li>
 			<li><a href="#subscribelink" class="headerlinks">Subscribe</a></li>
 			<li><a href="#aboutlink" class="headerlinks">About this project</a></li>
 		</ul></a>
+		<h1>Foreign Film Fountain
+		</h1>
+		<h3 id="tagline">Broaden your cinematic horizon
+		</h3>
 	</header>
-	<h2>Select your favourite genre and get recommendations
+	<div  style="padding-top:0">
+		<img src="http://i.imgur.com/UTCwigz.jpg">
+	</div>
+	<h2 id="select">Select your favourite genre and get recommendations for great foreign films!
 	</h2>
 	<div id="tiles">
 		<ul class="menu">
@@ -96,11 +101,14 @@
 			</li></a>
 		</ul>
 	</div>
+	<div>
+		<img src="http://i.imgur.com/UTCwigz.jpg">
+	</div>
 	<a name="alllink"><div class="all"></a>	
 		<h2 id="all">All films
 		</h2>
 		<div class="row">
-			<a name="dramalist"><div class="col-11" id="genreheader">
+			<a name="dramalist"><div class="col-12" id="genreheader">
 			Drama
 			</div></a>
 		</div>
@@ -157,7 +165,7 @@
 		</p></a>
 		</div>
 		<div class="row">
-			<a name="romancelist"><div class="col-11" id="genreheader">
+			<a name="romancelist"><div class="col-12" id="genreheader">
 			Romance
 			</div></a>
 		</div>
@@ -209,7 +217,7 @@
 		</p></a>
 		</div>
 		<div class="row">
-			<a name="actionlist"><div class="col-11" id="genreheader">
+			<a name="actionlist"><div class="col-12" id="genreheader">
 			Action
 			</div></a>
 		</div>
@@ -265,7 +273,7 @@
 		</p></a>
 		</div>
 		<div class="row">
-			<a name="horrorlist"><div class="col-11" id="genreheader">
+			<a name="horrorlist"><div class="col-12" id="genreheader">
 			Horror
 			</div></a>
 		</div>
@@ -320,7 +328,7 @@
 		</p></a>
 		</div>
 		<div class="row">
-			<a name="comedylist"><div class="col-11" id="genreheader">
+			<a name="comedylist"><div class="col-12" id="genreheader">
 			Comedy
 			</div></a>
 		</div>
@@ -367,7 +375,7 @@
 		</p></a>
 		</div>
 		<div class="row">
-			<a name="agelist"><div class="col-11" id="genreheader">
+			<a name="agelist"><div class="col-12" id="genreheader">
 			Coming of Age
 			</div></a>
 		</div>
@@ -421,7 +429,7 @@
 		</p></a>
 		</div>
 		<div class="row">
-			<a name="documentarylist"><div class="col-11" id="genreheader">
+			<a name="documentarylist"><div class="col-12" id="genreheader">
 			Documentary
 			</div></a>
 		</div>
@@ -475,7 +483,7 @@
 		</p></a>
 		</div>
 		<div class="row">
-			<a name="holidayslist"><div class="col-11" id="genreheader">
+			<a name="holidayslist"><div class="col-12" id="genreheader">
 			Holidays
 			</div></a>
 		</div>
@@ -528,7 +536,7 @@
 		</p></a>
 		</div>
 		<div class="row">
-			<a name="familylist"><div class="col-11" id="genreheader">
+			<a name="familylist"><div class="col-12" id="genreheader">
 			Family
 			</div></a>
 		</div>
@@ -571,29 +579,35 @@
 		</p></a>
 		</div>
 	</div>
+	<div>
+		<img src="http://i.imgur.com/UTCwigz.jpg">
+	</div>
 	<a name="suggestlink"><div class="suggest"></a>	
-		<h2 id="suggest">Suggest a film
+		<h2>Suggest a film
 		</h2>
-		<div class="row">
+		<div class="row" id="suggest">
 			<div class="col-12">
 				<p>Have you watched an excellent foreign film that isn't part of the Foreign FIlm Fountain yet? Submit your suggestion and we will add it to our recommendations!
 				</p>
 			</div>
 		</div>
-		<div class="row">
+		<div class="row" id="suggestionbox">
 			<div class="col-1">
 			</div>
 			<div class="col-4" id="suggestion">
 				<input type="suggestion" placeholder="Please provide the title, year and production country.">
 			</div>
 			<div class="col-1">
-				<button>Submit</button>
+				<button style="cursor: pointer">Submit</button>
 			</div>
 		</div>
 		<div class="row">
-			<a href="#top"><p id="back"> &#8593; Back to the Top</p>
-			</a>
+		<a href="#top"><p id="back"> &#8593; Back to the Top 
+		</p></a>
 		</div>
+	</div>
+	<div>
+		<img src="http://i.imgur.com/UTCwigz.jpg">
 	</div>
 	<a name="subscribelink"><div class="subscribe"></a>		<h2 id="subscribe">Subscribe
 		</h2>
@@ -640,20 +654,41 @@
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-12">
-			<a href="#top"><p id="back"> &#8593; Back to the Top 
-			</p></a>
-			</div>
+		<a href="#top"><p id="back"> &#8593; Back to the Top 
+		</p></a>
 		</div>
 	</div>
-	<a name="aboutlink"><div class="about"></a>		<h2 id="about">About this project
+	<div>
+		<img src="http://i.imgur.com/UTCwigz.jpg">
+	</div>
+	<a name="aboutlink"><div class="about"></a>	<h2 id="about">About this project
 		</h2>
-		<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-		</p>
+		<div class="row">
+			<div class="col-2">
+				<img src="http://i.imgur.com/p6zMrbN.jpg" id="profile">
+			</div>
+			<div class="col-9" id="abouttext">
+				<p>Foreign Film Fountain was created by Film Student Daria Janke as a gateway for people interested in international film. Studies have shown that watching foreign films enables people to learn about and empathise with the history and culture of other nations. As such film is a great tool for education and cultural exchange. <br />
+				To help people decide what film to start with, the list of recommendations is split into genre and additional references. This way, it is easier to find a film one might enjoy based on previous cinematic experience. Additionally, when availiable, we provide links to trailers as well as online platforms where the films can be watched - legally - with english subtitles. <br />
+				Foreign Film Fountan is at once a source for film recommendations and an online video aggregator, helping people decide what to watch and where to watch it. <br /><br />
+				</p>
+			</div>
+			<div class="col-2">
+			</div>
+			<div class="col-9">	
+				<i class="material-icons" style="font-size:20px">question_answer</i><span> </span>Contact: <span id="mail">daria@foreignfilmfountain.co.uk</a>
+			</div>
+		</div>
 		<div class="row">
 		<a href="#top"><p id="back"> &#8593; Back to the Top 
 		</p></a>
 		</div>
+	</div>
+	<div>
+		<img src="http://i.imgur.com/UTCwigz.jpg">
+	</div>
+	<div class="col-12" id="bottomline">
+	FFF | Foreign Film Fountain | 2017
 	</div>
 	<script>
 		$("button").on("click", function(){
