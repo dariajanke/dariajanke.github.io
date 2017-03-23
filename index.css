@@ -6,6 +6,7 @@ body{
 header{
 	text-align: center;
 	background-size: cover;
+	font-weight: bold;
 }
 #h1{
 	font-size: 40px;
@@ -44,7 +45,7 @@ a{
   color: white;
   font-weight: bold;
   font-size: 18px;
-  transition: 0.6s ease;
+  transition: 0.8s ease;
   border-radius: 0 3px 3px 0;
 }
 .next {
@@ -72,7 +73,7 @@ a{
   background-color: #bbb;
   border-radius: 50%;
   display: inline-block;
-  transition: background-color 0.6s ease;
+  transition: background-color 0.8s ease;
 }
 .active, .dot:hover {
   background-color: #717171;
@@ -136,6 +137,7 @@ h2{
 	background: rgba(0,0,0,.6);
 	text-align: center;
 	font-size: 40px;
+	font-weight: 800;
 	letter-spacing: 1px;
 	border-radius: 12px;
 	padding: 10px;
@@ -159,11 +161,16 @@ h2{
 }
 #genreheader{
     font-size: 30px;
+    font-weight: 800;
     padding-left: 5px;
     padding-bottom: 0;
     padding-right: 0;
     padding-top: 0;
     text-align: center;
+}
+.movie{
+	font-weight: bold;
+	font-size: 22px;
 }
 @media only screen and (min-width: 1000px){
 			.col-1 {width: 8.33%;}
@@ -264,8 +271,10 @@ input[placeholder]{
 }
 #drama{
 	background-image: url("http://i.imgur.com/5HXb6W6.jpg");
-	margin-right: 20px;
+	margin-right: 15px;
 	margin-top: 0;
+	margin-left: 0;
+
 }
 #romance{
 	background-image: url("http://i.imgur.com/Mt2IseT.jpg");
@@ -273,23 +282,23 @@ input[placeholder]{
 }
 #action{
 	background-image: url("http://i.imgur.com/VMgjaTA.jpg");
-	margin-left: 20px;
+	margin-left: 15px;
 	margin-top: 0;
 }
 #horror{
 	background-image: url("http://i.imgur.com/T1pZRkK.jpg");
-	margin-right: 20px;
+	margin-right: 15px;
 }
 #comedy{
 	background-image: url("http://i.imgur.com/uGEeafY.jpg")
 }
 #age{
 	background-image: url("http://i.imgur.com/orXZd8T.jpg");
-	margin-left: 20px;
+	margin-left: 15px;
 }
 #documentary{
 	background-image: url("http://i.imgur.com/UlkoHoj.jpg");
-	margin-right: 20px;
+	margin-right: 15px;
 	margin-bottom: 20px;
 }
 #holidays{
@@ -297,5 +306,5 @@ input[placeholder]{
 }
 #family{
 	background-image: url("http://i.imgur.com/TQXQcCz.jpg");
-	margin-left: 20px;
+	margin-left: 15px;
 }
